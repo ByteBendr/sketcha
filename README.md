@@ -14,11 +14,9 @@ A beautifully designed Flask web application that uses advanced AI to recognize 
 
 - 🖼️ **Drag & Drop Upload** - Easy image uploading with visual feedback
 - 🤖 **Advanced AI** - Uses Microsoft's ResNet-152 for highly accurate predictions
-- 🌙 **Working Dark Mode** - Toggle between light and dark themes (preference saved!)
 - 📊 **Visual Results** - Animated confidence bars and smart emoji matching
 - 😊 **200+ Smart Emojis** - Intelligently matched to prediction categories
 - 📱 **Fully Responsive** - Perfect experience on desktop, tablet, and mobile
-- ✨ **Delightful Effects** - Sparkle trail, smooth transitions, micro-interactions
 - ⚠️ **AI Disclaimer** - Clear warning about prediction accuracy
 
 ## 🛠️ Installation
@@ -67,14 +65,12 @@ sketcha/
 │
 ├── templates/
 │   └── index.html           # Main HTML template
-│   └── favicon
-│       └── (favicon files)
 ├── static/
 │   ├── css/
 │   │   └── style.css        # All styles (organized with CSS variables)
 │   └── js/
-│       └── script.js        # Frontend JavaScript (dark mode, uploads, etc.)
-│
+│   │   └── script.js        # Frontend JavaScript (dark mode, uploads, etc.)
+│   └── (favicon files)
 └── uploads/                 # (auto-created) Temporary storage
 ```
 
