@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketcha - AI Image Recognition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Grandstander:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background-doodles"></div>
+    
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon sun">☀️</span>
+        <span class="toggle-icon moon">🌙</span>
+    </button>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <span class="logo-eye">👁️</span>
+                    <span class="logo-eye right">👁️</span>
+                </div>
+            </div>
+            <h1 class="title">Sketcha</h1>
+            <p class="subtitle">AI-Powered Image Recognition Magic ✨</p>
+            <div class="warning-banner">
+                <span class="warning-icon">⚠️</span>
+                <span class="warning-text">AI predictions may not always be accurate</span>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="content-grid">
+                <div class="left-column">
+                    <div class="upload-section">
+                        <div class="drop-zone" id="dropZone">
+                            <div class="drop-zone-content">
+                                <div class="upload-icon">📸</div>
+                                <p class="drop-text">Drop your image here!</p>
+                                <p class="drop-subtext">Or click to browse</p>
+                                <button class="browse-btn" id="browseBtn">
+                                    <span>🖼️</span>
+                                    <span>Choose Image</span>
+                                </button>
+                            </div>
+                            
+                            <div class="preview-container" id="previewContainer" style="display: none;">
+                                <img id="imagePreview" alt="Preview" class="image-preview">
+                                <button class="remove-btn" id="removeBtn">
+                                    <span>🗑️</span>
+                                    <span>Remove</span>
+                                </button>
+                            </div>
+                            
+                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        </div>
+                        
+                        <button class="analyze-btn" id="analyzeBtn" disabled>
+                            <span class="btn-icon">🔍</span>
+                            <span class="btn-text">Analyze Image!</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="results-panel">
+                        <div class="results-header">
+                            <h2 class="results-title">Predictions</h2>
+                            <div class="wiggle-line"></div>
+                        </div>
+                        
+                        <div class="loading-container" id="loadingContainer" style="display: none;">
+                            <div class="loading-spinner">
+                                <div class="spinner-circle"></div>
+                                <div class="spinner-eye">👁️</div>
+                            </div>
+                            <p class="loading-text">Analyzing your image... ✨</p>
+                        </div>
+                        
+                        <div class="empty-state" id="emptyState">
+                            <div class="empty-icon">🎯</div>
+                            <p class="empty-text">Upload an image to see predictions!</p>
+                            <div class="floating-stars">
+                                <span class="star">⭐</span>
+                                <span class="star">✨</span>
+                                <span class="star">💫</span>
+                                <span class="star">🌟</span>
+                            </div>
+                        </div>
+                        
+                        <div class="results-section" id="resultsSection" style="display: none;">
+                            <div class="predictions-container" id="predictionsContainer">
+                                <!-- Predictions will be inserted here dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            Made with 💖 and a sprinkle of AI magic! ✨
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
