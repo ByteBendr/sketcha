@@ -21,7 +21,7 @@ A beautifully designed Flask web application that uses advanced AI to recognize 
 Download all the files to a directory on your computer.
 
 ### Step 2: Install Dependencies
-Open a terminal/command prompt in the project directory and run:
+Run the bundled dependency installer:
 
 ```bash
 Requirements Installer (LAUNCH FIRST).py
