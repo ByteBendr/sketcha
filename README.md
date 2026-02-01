@@ -2,14 +2,6 @@
 
 A beautifully designed Flask web application that uses advanced AI to recognize objects in images! Features a hand-drawn, cartoonish UI with smooth animations, **fully functional dark mode**, and a clean, spacious layout.
 
-### 🎨 Design Features
-- **Hand-drawn Aesthetics** - Playful, cartoonish design with custom fonts
-- **Dark Mode** - Beautiful dark theme with perfect contrast (saves your preference!)
-- **Smooth Animations** - Bouncing logo, wiggling icons, sliding cards, sparkle effects
-- **Smart Color System** - CSS variables for easy theming
-- **Spacious Layout** - Generous padding and margins for comfortable viewing
-- **Visual Feedback** - Hover effects, active states, and interactive elements
-
 ## 🚀 Features
 
 - 🖼️ **Drag & Drop Upload** - Easy image uploading with visual feedback
